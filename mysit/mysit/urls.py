@@ -14,10 +14,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from 
-admin.autodiscover()
-
+from learn import views as learn_views
 
 urlpatterns = [
+    url(r'^$', learn_views.index),
     url(r'^admin/', include(admin.site.urls)),
 ]
