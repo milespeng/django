@@ -7,8 +7,7 @@ from common.common import run_cmd
 
 
 class MysqlAccounts(models.Model):
-    __tablename__ = 'mysql_account'
-    id = models.IntegerField(u'ID')
+    #__tablename__ = 'mysql_account'
     loginUser = models.CharField(u'认证用户名', max_length=100)
     loginPassword = models.CharField(u'认证用户密码', max_length=255)
     name = models.CharField(u'用户名', max_length=100)
